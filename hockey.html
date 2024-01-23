@@ -28,7 +28,7 @@
     }
   </style>
 </head>
-<body><main class="fontmanrope m-14">
+<body><main class="fontmanrope m-14 lg: px-39">
  
     
         <div class="navbar bg-base-100 ">
@@ -53,17 +53,12 @@
                   <li><a>Item 3</a></li>
                 </ul>
               </div>
-              <h1>Hockey’s</h1>
+              <h1 class="text-bold">Hockey <span class="text-[#FF4240]">’</span> s</h1>
             </div>
             <div class="navbar-center hidden lg:flex">
               <ul class="menu menu-horizontal px-1">
                 <li><a>Home</a></li>
-                <li>
-                  <details>
-                    <summary>About</summary>
-                    
-                  </details>
-                </li>
+                <li><a>About</a></li>
                 <li><a>Pages</a></li>
                 <li><a>Blog</a></li>
                 <li><a>Contact</a></li>
@@ -81,35 +76,59 @@
                   </clipPath>
                 </defs>
               </svg>
-              <a class="btn btn-primary bg-[#FF4240] text-white">Button</a>
+              <a class="btn btn-primary bg-[#FF4240] border-none text-white">Get Ticket</a>
             </div>
           </div>
 
-          
+
+
+<section>
+
+<div class="carousel w-full">
+  <div id="slide1" class="carousel-item relative w-full">
+    <img src="./Images/1.png" class="w-full" />
+    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+      <a href="#slide4" class="btn btn-circle">❮</a> 
+      <a href="#slide2" class="btn btn-circle">❯</a>
+    </div>
+  </div> 
+  <div id="slide2" class="carousel-item relative w-full">
+    <img src="https://daisyui.com/images/stock/photo-1609621838510-5ad474b7d25d.jpg" class="w-full" />
+    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+      <a href="#slide1" class="btn btn-circle">❮</a> 
+      <a href="#slide3" class="btn btn-circle">❯</a>
+    </div>
+  </div> 
+  <div id="slide3" class="carousel-item relative w-full">
+    <img src="https://daisyui.com/images/stock/photo-1414694762283-acccc27bca85.jpg" class="w-full" />
+    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+      <a href="#slide2" class="btn btn-circle">❮</a> 
+      <a href="#slide4" class="btn btn-circle">❯</a>
+    </div>
+  </div> 
+  <div id="slide4" class="carousel-item relative w-full">
+    <img src="https://daisyui.com/images/stock/photo-1665553365602-b2fb8e5d1707.jpg" class="w-full" />
+    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+      <a href="#slide3" class="btn btn-circle">❮</a> 
+      <a href="#slide1" class="btn btn-circle">❯</a>
+    
+      
+    </div>
+  </div>
+</div>
+
+<div class="lg:h-[15vh] lg:w-2/4 mx-auto bg-black lg:-translate-y-36 lg:translate-x-41 rounded-lg text-white p-5 ">
+  <h3>Meet all the heroes from the field</h3>
+  <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur voluptatum esse explicabo, amet tempore hic.</p>
+  
+ </div>
+</section>
 
 
 
-    <section>
-        <div class="hero sm:min-h-24 lg:min-w-0 lg:min-h-screen md:min-h-40 rounded-xl" style="background-image: url(./Images/1.png);">
-            <div class="hero-overlay bg-opacity-60"></div>
-            <div class="hero-content text-center text-neutral-content">
-                <div class="flex gap-1.5">
-                    <svg class="bg-black rounded-xl" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M15.75 19.5L8.25 12L15.75 4.5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                      </svg>
 
-                      <svg class="bg-black rounded-xl" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M8.25 4.5L15.75 12L8.25 19.5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                      </svg>
-                </div>
-              <div class="max-w-md bg-black rounded-lg">
-                <h1 class="  text-xl font-bold">Meet all the heroes from the field</h1>
-                <p class="mb-5">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
-            
-              </div>
-            </div>
-          </div>
-    </section>
+
+    
 
     <section class=" text-center my-24">
         <h1 class=" text-5xl font-extrabold mb-6">
@@ -122,7 +141,7 @@
 
     <section class=" ">
 
-  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-2 pl-11 ">
+  <div class="lg:flex lg:justify-between ">
 
 
 
@@ -130,10 +149,10 @@
 
 
         
-        <div class="radial-progress text-[#FF4240] m-7" style="--value:87;" role="progressbar">87%</div>
-          <div class="-pb-50">
-            <h3>Prayer Facility</h3>
-          <p>Amet consectetur. Condimentum dignissim adipiscing .</p>
+        <div class="radial-progress  text-[#FF4240] " style="--value:87;" role="progressbar"> <span class="text-black "> 87%</span></div>
+          <div class=" ">
+            <h3 class=" ">Prayer Facility</h3>
+          <p class=" ">Amet consectetur. Condimentum dignissim adipiscing .</p>
           </div>
           
 
@@ -143,10 +162,10 @@
 
 
         
-        <div class="radial-progress text-[#49D293] m-7" style="--value:70;" role="progressbar">70%</div>
+        <div class="radial-progress text-[#49D293] " style="--value:95;" role="progressbar"><span class="text-black"> 95%</span></div>
           <div class="-pb-50">
-            <h3>Prayer Facility</h3>
-          <p>Amet consectetur. Condimentum dignissim adipiscing .</p>
+            <h3 class=" ">Prayer Facility</h3>
+          <p class=" ">Amet consectetur. Condimentum dignissim adipiscing .</p>
           </div>
           
 
@@ -158,27 +177,28 @@
 
 
         
-        <div class="radial-progress text-[#FFB546]  m-7 " style="--value:87 ;" role="progressbar">87%</div>
-          <div class="-pb-50">
-            <h3>Prayer Facility</h3>
-          <p>Amet consectetur. Condimentum dignissim adipiscing .</p>
+        <div class="radial-progress text-[#FFB546]" style="--value:90 ;" role="progressbar"><span class="text-black"> 90%</span></div>
+          <div class="">
+            <h3 class=" ">Prayer Facility</h3>
+          <p class=" ">Amet consectetur. Condimentum dignissim adipiscing .</p>
           </div>
           
 
 
     </div>
-    <div>
+    <div class="">
 
 
-        <div class="radial-progress text-[#4C8DF1] m-7" style="--value:70;" role="progressbar">70%</div>
-          <div class="-pb-50">
-            <h3>Prayer Facility</h3>
-          <p>Amet consectetur. Condimentum dignissim adipiscing .</p>
-          </div>
-          
+        
+      <div class="radial-progress text-[#FFB546] " style="--value:90 ;" role="progressbar"><span class="text-black"> 90%</span></div>
+        <div class="">
+          <h3 class=" ">Prayer Facility</h3>
+        <p class=" ">Amet consectetur. Condimentum dignissim adipiscing .</p>
+        </div>
+        
 
 
-    </div>
+  </div>
       
     
    
@@ -189,6 +209,8 @@
   
 
     </section>
+
+    
 
 
     <section class=" text-center my-24">
@@ -206,10 +228,10 @@
             <div ><div class="hero lg:min-h-screen rounded-lg" style="background-image: url(./Images/2.png);">
                 <div class="hero-overlay bg-opacity-60"></div>
                 <div class="hero-content text-neutral-content">
-                  <div class=" ">
-                    <h1 class="mb-5 text-5xl font-bold">Junior Program</h1>
+                  <div class=" top-10 ">
+                    <h1 class="mb-5 lg:text-5xl font-bold">Junior Program</h1>
                     <p class="mb-5">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
-                    <button class="btn btn bg-[#FF4240]">Register Now!</button>
+                    <button class="btn btn-primary bg-[#FF4240] border-none text-white">Register Now!</button>
                   </div>
                 </div>
               </div>
@@ -218,9 +240,9 @@
                 <div class="hero-overlay bg-opacity-60"></div>
                 <div class="hero-content text-start text-neutral-content">
                   <div class="  ">
-                    <h1 class=" text-5xl font-bold">Teenager Program</h1>
+                    <h1 class=" lg:text-5xl font-bold">Teenager Program</h1>
                     <p class="mb-5">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
-                    <button class="btn btn bg-[#FF4240]">Register Now!</button>
+                    <button class="btn btn-primary bg-[#FF4240] border-none text-white">Register Now!</button>
                   </div>
                 </div>
               </div></div>
@@ -230,6 +252,7 @@
         </div>
 
     </section>
+    
     <section class="pb-5">
 
         <div class="grid lg:grid-cols-1 ">
@@ -237,9 +260,9 @@
                 <div class="hero-overlay bg-opacity-60"></div>
                 <div class="hero-content text-neutral-content">
                   <div class=" ">
-                    <h1 class="mb-5 text-5xl font-bold">Professional Program</h1>
+                    <h1 class="mb-5 lg:text-5xl font-bold">Professional Program</h1>
                     <p class="mb-5">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
-                    <button class="btn btn bg-[#FF4240]">Register Now!</button>
+                    <button class="btn btn-primary bg-[#FF4240] border-none text-white">Register Now!</button>
                   </div>
                 </div>
               </div>
@@ -249,6 +272,15 @@
 
     </section>
 
+    <section class=" text-center my-24">
+      <h1 class=" text-5xl font-extrabold mb-6">
+          The Legal Practice Area
+      </h1>
+      <p>
+          There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.
+      </p>
+  </section>
+
     <section>
 <div class="grid lg:grid-cols-4 sm:grid-rows-1 gap-4 mt-4">
           
@@ -256,8 +288,8 @@
           
          <div>
           <img src="./Images/5.png" alt=""></div>
-          <div class="">
-           <div class="flex"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <div class=" ">
+           <div class="flex"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"> 
              <g clip-path="url(#clip0_6_192)">
                <path d="M12 17.7498L5.82799 20.9948L7.00699 14.1218L2.00699 9.25477L8.90699 8.25477L11.993 2.00177L15.079 8.25477L21.979 9.25477L16.979 14.1218L18.158 20.9948L12 17.7498Z" fill="#F99808" stroke="#F99808" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
              </g>
@@ -624,6 +656,14 @@
      </div>
 
     </section>
+    <section class=" text-center my-24">
+      <h1 class=" text-5xl font-extrabold mb-6">
+          The Legal Practice Area
+      </h1>
+      <p>
+          There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.
+      </p>
+  </section>
 
     <section class=" container  mt-5 lg:flex gap-5 lg:justify-between">
       <img src="./Images/11.png" alt="" class="sm:-mb-3">
@@ -687,6 +727,14 @@
         </div>
       </div>
     </section >
+    <section class=" text-center my-24">
+      <h1 class=" text-5xl font-extrabold mb-6">
+          The Legal Practice Area
+      </h1>
+      <p>
+          There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.
+      </p>
+  </section>
     <section class="flex gap-5">
       <div class="">
         <div class="bg-[#d6e7ba] p-3 ">
@@ -777,7 +825,7 @@
    
 
     <section>
-      <footer class="footer footer-center p-10 bg-base-200 text-base-content rounded">
+      <div class="footer footer-center p-10 bg-base-200 text-base-content rounded">
         <aside>
           <p class="text-bold">Social Media</p>
         </aside>
@@ -796,7 +844,7 @@
           </div>
         </nav> 
         
-      </footer>
+      </div>
     </section>
    
 
